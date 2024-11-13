@@ -1,0 +1,10 @@
+initContainers:
+  enabled: true
+component: backend
+projectName: expense
+appVersion: 2.0.2
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
