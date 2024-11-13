@@ -2,7 +2,7 @@ initContainers:
   enabled: true
 component: backend
 projectName: expense
-appVersion: 2.0.2
+appVersion: v1
 
 service:
   type: ClusterIP
