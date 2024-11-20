@@ -13,7 +13,7 @@ echo Username - admin
 echo Password - $(argocd admin intial-password -n argocd  | head -1)
 
 fi
-
+git 
 if   [ "$1" == "jobs" ]; then
     argocd login $(kubectl get svc -n argocd argocd-server | awk '{print $4}' | tail -1) --username admin --password CZsTSo0Q6ZmdxrTY --insecure --grpc-web
 
